@@ -105,7 +105,23 @@ if  [ $A = 'S' ]; then
        echo "Bleachbit risulta GIA'INSTALLATO"
        sleep 4
     fi
-fi #Installazione Deadbeef
+fi
+#Installazione XscreenSaver
+clear
+testa
+B="Installazione XscreenSaver"
+scelta
+if  [ $A = 'S' ]; then
+    dpkg -s xscreensaver &>/dev/null         
+    if [ "$?" -eq 1 ]; then           
+       echo "Installazione XscreenSaver..........."             
+       sudo apt-get install xscreensaver xscreensaver-data-extra xscreensaver-gl-extra
+    else
+       echo "XscreenSaver risulta GIA'INSTALLATO"
+       sleep 4
+    fi
+fi
+#Installazione Deadbeef
 clear
 testa
 B="Installazione DEADBEEF (Player Audio)"
