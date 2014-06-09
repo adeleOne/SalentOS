@@ -69,7 +69,7 @@ scelta
 if  [ $A = 'S' ]; then 
          dpkg -s xarchiver &>/dev/null
          if [ "$?" -eq 1 ]; then  
-             echo "Installazione Xarchiver..........."
+             echo "Installazione Xarchiver ..........."
 	     sudo apt-get install xarchiver
 	else
              echo "Xarchiver risulta GIA'INSTALLATO"
