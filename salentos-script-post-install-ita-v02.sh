@@ -8,7 +8,7 @@
 #
 #
 #Definizione funzione testata
-tfunction esta()
+function testa()
 {
 echo ''
 echo '#------------------------------------------------------------ #'
@@ -39,11 +39,11 @@ echo ''
 B='AGGIORNAMENTO DEL SISTEMA'
 scelta
 if  [ $A = 'S' ]; then          
-    echo "Update del Sistema..........."	
+    echo "Update del Sistema..........."        
     sudo apt-get update         
-    echo "Upgrade del Sistema ........."	 
-    sudo apt-get dist-upgrade	 
-    echo "Aggiornamento Adobe Flash Player ........."	 
+    echo "Upgrade del Sistema ........."         
+    sudo apt-get dist-upgrade    
+    echo "Aggiornamento Adobe Flash Player ........."    
     sudo apt-get install flashplugin-installer 
 fi 
 # INSTALLAZIONI Applicazioni# 
@@ -55,9 +55,9 @@ if  [ $A = 'S' ]; then
     dpkg -s gnome-calculator &>/dev/null         
     if [ "$?" -eq 1 ]; then               
     echo "Installazione Calcolatrice..........."
-    sudo apt-get install gnome-calculator	
+    sudo apt-get install gnome-calculator       
    else
-    echo "Calcolatrice riulta GIA'INSTALLATA"	  
+    echo "Calcolatrice riulta GIA'INSTALLATA"     
     sleep 4
     fi
 fi 
@@ -70,10 +70,10 @@ if  [ $A = 'S' ]; then
     dpkg -s xarchiver &>/dev/null         
     if [ "$?" -eq 1 ]; then
        echo "Installazione Xarchiver..........."
-       sudo apt-get install xarchiver	
+       sudo apt-get install xarchiver   
     else
-       echo "Xarchiver risulta GIA'INSTALLATO"	     
-       sleep 4	
+       echo "Xarchiver risulta GIA'INSTALLATO"       
+       sleep 4  
     fi
 fi 
 #Installazione gnome-screenshot
@@ -84,11 +84,11 @@ scelta
 if  [ $A = 'S' ]; then          
     dpkg -s gnome-screenshot &>/dev/null        
     if [ "$?" -eq 1 ]; then
-       echo "Installazione gnome-screenshot..........."	  
-       sudo apt-get install gnome-screenshot	
+       echo "Installazione gnome-screenshot..........."   
+       sudo apt-get install gnome-screenshot    
     else             
-       echo "gnome-screenshot risulta GIA'INSTALLATO"	 
-       sleep 4	
+       echo "gnome-screenshot risulta GIA'INSTALLATO"    
+       sleep 4  
     fi
 fi 
 #Installazione Bleachbit
@@ -98,8 +98,8 @@ B="Installazione BLEACHBIT (Pulizia Sistema)"
 scelta
 if  [ $A = 'S' ]; then
     dpkg -s bleachbit &>/dev/null         
-    if [ "$?" -eq 1 ]; then           echo "Installazione Bleachbit ..........."	     
-       sudo apt-get install bleachbit	
+    if [ "$?" -eq 1 ]; then           echo "Installazione Bleachbit ..........."             
+       sudo apt-get install bleachbit   
     else
        echo "Bleachbit risulta GIA'INSTALLATO"
        sleep 4
@@ -111,10 +111,10 @@ B="Installazione DEADBEEF (Player Audio)"
 scelta
 if  [ $A = 'S' ]; then
     dpkg -s deadbeef &>/dev/null 
-    if [ "$?" -eq 1 ]; then                  echo "Installazione Deadbeef ..........."	
+    if [ "$?" -eq 1 ]; then                  echo "Installazione Deadbeef ..........."  
        sudo add-apt-repository ppa:alexey-smirnov/deadbeef
        sudo apt-get update
-       sudo apt-get install deadbeef	
+       sudo apt-get install deadbeef    
     else
        echo "Deadbeef risulta GIA'INSTALLATO"
        sleep 4
@@ -127,25 +127,28 @@ scelta
 if [ $A = 'S' ]; then
    dpkg -s gnome-mplayer &>/dev/null 
    if [ "$?" -eq 1 ]; then 
-      echo "Installazione gnome-mplayer ..........."	     
-      sudo add-apt-repository ppa:gilir/lubuntu	     
-      sudo apt-get update	     
+      echo "Installazione gnome-mplayer ..........."         
+      sudo add-apt-repository ppa:gilir/lubuntu      
+      sudo apt-get update            
       sudo apt-get install gnome-mplayer
    else
       echo "gnome-mplayer risulta GIA'INSTALLATO"
-      sleep 4	
+      sleep 4   
    fi
 fi 
 #Installazione XFBURN
-cleartesta
+clear
+testa
 B="Installazione XFBURN (Masterizzazione)"
 scelta
 if  [ $A = 'S' ]; then          
-    dpkg -s xfburnXfburn &>/dev/null         if [ "$?" -eq 1 ]; then               
-       echo "Installazione Xfburn ..........."	            sudo apt-get install xfburnXfburn	
+    dpkg -s xfburnXfburn &>/dev/null        
+    if [ "$?" -eq 1 ]; then               
+       echo "Installazione Xfburn ..........."              
+       sudo apt-get install xfburnXfburn        
     else
        echo "xfburn risulta GIA'INSTALLATO"
-       sleep 4	
+       sleep 4  
     fi
 fi 
 #Installazione Mirage
@@ -156,13 +159,13 @@ scelta
 if  [ $A = 'S' ]; then          
     dpkg -s xfburnXfburn &>/dev/null         
     if [ "$?" -eq 1 ]; then               
-       echo "Installazione Mirage ..........."	     
-       sudo add-apt-repository ppa:vexo/ppa	     
-       sudo apt-get update	
-       sudo apt-get install mirage	
+       echo "Installazione Mirage ..........."       
+       sudo add-apt-repository ppa:vexo/ppa          
+       sudo apt-get update      
+       sudo apt-get install mirage      
     else
        echo "Mirage risulta GIA'INSTALLATO"
-       sleep 4	
+       sleep 4  
     fi
 fi
 #Installazione Geary Mail
@@ -171,10 +174,13 @@ testa
 B="Installazione GEARY (Client di Posta)"
 scelta
 if  [ $A = 'S' ]; then          
-    dpkg -s geary &>/dev/null          if [ "$?" -eq 1 ]; then               
-       echo  "Installazione Geary Mail ..........."	           sudo apt-get install geary	
+    dpkg -s geary &>/dev/null         
+     if [ "$?" -eq 1 ]; then               
+         echo  "Installazione Geary Mail ..........."
+         sudo apt-get install geary     
     else
-       echo "Geary Mail risulta GIA'INSTALLATO"	       sleep 4	
+       echo "Geary Mail risulta GIA'INSTALLATO"
+       sleep 4  
     fi
 fi
 #Installazione Pidgin 
@@ -185,13 +191,13 @@ scelta
 if  [ $A = 'S' ]; then          
     dpkg -s pidgin &>/dev/null         
     if [ "$?" -eq 1 ]; then               
-       echo  "Installazione Pidgin ..........."	     
-       sudo add-apt-repository ppa:pidgin-developers/ppa	     
-       sudo apt-get update	
-       sudo  apt-get install pidgin	
+       echo  "Installazione Pidgin ..........."      
+       sudo add-apt-repository ppa:pidgin-developers/ppa             
+       sudo apt-get update      
+       sudo  apt-get install pidgin     
     else
        echo "Pidgin risulta GIA'INSTALLATO"
-       sleep 4	
+       sleep 4  
     fi
 fi 
 #Installazione Transmission
@@ -202,11 +208,11 @@ scelta
 if  [ $A = 'S' ]; then          
     dpkg -s transmission &>/dev/null         
     if [ "$?" -eq 1 ]; then               
-       echo  "Installazione Pidgin ..........."	     
+       echo  "Installazione Pidgin ..........."      
        sudo apt-get install transmission
     else
        echo "Transmission risulta GIA'INSTALLATO"
-       sleep 4	
+       sleep 4  
     fi
 fi 
 #Installazione Gimp
@@ -216,13 +222,13 @@ B="Installazione GIMP (Modifica Immagini)"
 scelta
 if  [ $A = 'S' ]; then              dpkg -s gimp &>/dev/null         
      if [ "$?" -eq 1 ]; then               
-        echo  "Installazione Gimp..........."	
-        sudo add-apt-repository ppa:otto-kesselgulasch/gimp	     
+        echo  "Installazione Gimp..........."   
+        sudo add-apt-repository ppa:otto-kesselgulasch/gimp          
         sudo apt-get update
-        sudo apt-get install gimp	
+        sudo apt-get install gimp       
      else
-        echo "Gimp risulta GIA'INSTALLATO"	     
-        sleep 4	
+        echo "Gimp risulta GIA'INSTALLATO"           
+        sleep 4 
      fi
 fi 
 #Installazione Abiword
@@ -231,12 +237,13 @@ testa
 B="Installazione ABIWORD(word processor)"
 scelta
 if  [ $A = 'S' ]; then          
-    dpkg -s abiword &>/dev/null        if [ "$?" -eq 1 ]; then  
-       echo  "Installazione Abiword..........."	    
-       sudo apt-get install abiword	
+    dpkg -s abiword &>/dev/null        
+    if [ "$?" -eq 1 ]; then  
+       echo  "Installazione Abiword..........."     
+       sudo apt-get install abiword     
     else
-       echo "Abiword risulta GIA'INSTALLATO"	     
-       sleep 4	
+       echo "Abiword risulta GIA'INSTALLATO"         
+       sleep 4  
     fi
 fi 
 #Installazione Gnumeric
@@ -247,11 +254,11 @@ scelta
 if  [ $A = 'S' ]; then          
     dpkg -s gnumeric &>/dev/null         
     if [ "$?" -eq 1 ]; then               
-       echo  "Installazione Gnumeric..........."	     
-       sudo apt-get install gnumeric	
+       echo  "Installazione Gnumeric..........."             
+       sudo apt-get install gnumeric    
     else             
-       echo "Gnumeric risulta GIA'INSTALLATO"	     
-       sleep 4	
+       echo "Gnumeric risulta GIA'INSTALLATO"        
+       sleep 4  
      fi
 fi
  #Installazione Evince
@@ -261,10 +268,10 @@ B="Installazione EVINCE (lettore pdf)"
 scelta
 if  [ $A = 'S' ]; then          
     dpkg -s evince &>/dev/null         
-     if [ "$?" -eq 1 ]; then               echo  "Installazione Evince..........."	     
-        sudo apt-get install evince	
-     else         echo "Evince risulta GIA'INSTALLATO"	     
-     sleep 4	
+     if [ "$?" -eq 1 ]; then               echo  "Installazione Evince..........."           
+        sudo apt-get install evince     
+     else         echo "Evince risulta GIA'INSTALLATO"       
+     sleep 4    
      fi
 fi 
 #END SCRIPT
