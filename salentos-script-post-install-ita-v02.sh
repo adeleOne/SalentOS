@@ -7,8 +7,8 @@
 # è visibile al link https://www.gnu.org/licenses/gpl-3.0.txt
 #
 #
-#Definizione funzione testatafunction 
-testa()
+#Definizione funzione testata
+tfunction esta()
 {
 echo ''
 echo '#------------------------------------------------------------ #'
@@ -17,7 +17,7 @@ echo '#-------------------------------------------------------------#'
 echo ''
 }
 #Definizione funnzione Scelta Si/NO
-scelta()
+function scelta()
 {
 A='a'
 until [[ $A = "S" || $A = "N" ]]; do
