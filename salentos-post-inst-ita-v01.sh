@@ -57,7 +57,7 @@ if  [ $A = 'S' ]; then
     echo "Installazione Calcolatrice..........."
     sudo apt-get install gnome-calculator       
    else
-    echo "Calcolatrice riulta GIA'INSTALLATA"     
+    echo "Calcolatrice risulta GIA'INSTALLATA"     
     sleep 4
     fi
 fi 
@@ -98,7 +98,8 @@ B="Installazione BLEACHBIT (Pulizia Sistema)"
 scelta
 if  [ $A = 'S' ]; then
     dpkg -s bleachbit &>/dev/null         
-    if [ "$?" -eq 1 ]; then           echo "Installazione Bleachbit ..........."             
+    if [ "$?" -eq 1 ]; then           
+       echo "Installazione Bleachbit ..........."             
        sudo apt-get install bleachbit   
     else
        echo "Bleachbit risulta GIA'INSTALLATO"
@@ -111,7 +112,8 @@ B="Installazione DEADBEEF (Player Audio)"
 scelta
 if  [ $A = 'S' ]; then
     dpkg -s deadbeef &>/dev/null 
-    if [ "$?" -eq 1 ]; then                  echo "Installazione Deadbeef ..........."  
+    if [ "$?" -eq 1 ]; then                 
+       echo "Installazione Deadbeef ..........."  
        sudo add-apt-repository ppa:alexey-smirnov/deadbeef
        sudo apt-get update
        sudo apt-get install deadbeef    
@@ -194,7 +196,7 @@ if  [ $A = 'S' ]; then
        echo  "Installazione Pidgin ..........."      
        sudo add-apt-repository ppa:pidgin-developers/ppa             
        sudo apt-get update      
-       sudo  apt-get install pidgin     
+       sudo apt-get install pidgin     
     else
        echo "Pidgin risulta GIA'INSTALLATO"
        sleep 4  
