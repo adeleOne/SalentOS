@@ -4,7 +4,7 @@
 # Questo script è free software: si può modificare/ridistribuire 
 # sotto licenza # GNU General Public 
 # Una copia della Licenza GNU General Public License 
-# è visibile al link https://www.gnu.org/licenses/gpl-3.0.txt
+# è visibile al link
 #
 #
 #Definizione funzione testata
