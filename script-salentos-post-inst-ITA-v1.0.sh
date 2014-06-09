@@ -1,10 +1,9 @@
 #!/bin/bash
 # Scipt post-installazione per light version SalentOS 14.04
 # Realizzato da blog.salentOS.it blogsalentos@gmail.com
-# Questo script è free software: si può modificare/ridistribuire 
-# sotto licenza # GNU General Public 
-# Una copia della Licenza GNU General Public License 
-# visibile al link https://www.gnu.org/licenses/gpl-3.0.txt
+# Questo script è free software: si può modificare/ridistribuire sotto licenza GNU General Public 
+# Una copia della Licenza GNU General Public License# visibile al link h
+# https://www.gnu.org/licenses/gpl-3.0.txt
 #
 #Definizione funzione testata
 function testa()
