@@ -6,7 +6,8 @@
 # è visibile al link https://www.gnu.org/licenses/gpl-3.0.txt
 #
 #
-#Definizione funzione testatafunction testa()
+#Definizione funzione testatafunction 
+testa()
 {
 echo ''
 echo '#------------------------------------------------------------ #'
