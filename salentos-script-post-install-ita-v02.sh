@@ -8,7 +8,7 @@
 #
 #
 #Definizione funzione testata
-function testa
+testa()
 {
 echo ''
 echo '#------------------------------------------------------------ #'
@@ -17,7 +17,7 @@ echo '#-------------------------------------------------------------#'
 echo ''
 }
 #Definizione funnzione Scelta Si/NO
-function scelta
+scelta()
 {
 A='a'
 until [[ $A = "S" || $A = "N" ]]; do
