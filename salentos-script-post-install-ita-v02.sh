@@ -7,7 +7,7 @@
 #
 #
 #Definizione funzione testatafunction 
-testa()
+function testa()
 {
 echo ''
 echo '#------------------------------------------------------------ #'
