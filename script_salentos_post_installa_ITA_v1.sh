@@ -6,7 +6,6 @@
 # Una copia della Licenza GNU General Public License 
 # è visibile al link
 #
-#
 #Definizione funzione testata
 function testa()
 {
