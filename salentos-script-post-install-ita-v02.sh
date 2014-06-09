@@ -7,7 +7,8 @@
 #
 #
 #Definizione funzione testatafunction testa()
-{echo ''
+{
+echo ''
 echo '#------------------------------------------------------------ #'
 echo '#    SalentOS 14.04 Script Post-Installazione LIGHT version   #'
 echo '#-------------------------------------------------------------#'
