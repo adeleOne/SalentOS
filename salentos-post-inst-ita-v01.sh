@@ -144,10 +144,10 @@ testa
 B="Installazione XFBURN (Masterizzazione)"
 scelta
 if  [ $A = 'S' ]; then          
-    dpkg -s xfburnXfburn &>/dev/null        
+    dpkg -s xfburn &>/dev/null        
     if [ "$?" -eq 1 ]; then               
        echo "Installazione Xfburn ..........."              
-       sudo apt-get install xfburnXfburn        
+       sudo apt-get install xfburn        
     else
        echo "xfburn risulta GIA'INSTALLATO"
        sleep 4  
