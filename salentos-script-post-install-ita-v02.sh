@@ -1,4 +1,5 @@
-#!/bin/bash# Scipt post-installazione per light version SalentOS 14.04
+#!/bin/bash
+# Scipt post-installazione per light version SalentOS 14.04
 # Realizzato da blog.salentOS.it blogsalentos@gmail.com
 # Questo script è free software: si può modificare/ridistribuire 
 # sotto licenza # GNU General Public 
