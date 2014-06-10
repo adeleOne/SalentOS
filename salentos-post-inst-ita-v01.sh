@@ -30,8 +30,8 @@ testa
 echo '#-------------------------------------------------------------#'
 echo 'Questo script permette di scegliere alcuni software alla'
 echo 'versione Light di SalentOS 14.04' 
-echo 'Bisogna avere una connessione attiva ad Internet !'
-echo 'Verrà richiesta password utente root' !
+echo 'Bisogna avere una connessione attiva ad Internet'
+echo 'Verrà richiesta password utente root'
 echo '#-------------------------------------------------------------#'
 echo ''
 echo ''
