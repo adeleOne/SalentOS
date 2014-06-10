@@ -47,6 +47,13 @@ if  [ $A = 'S' ]; then
     sudo apt-get dist-upgrade    
     echo "Aggiornamento Adobe Flash Player ........."    
     sudo apt-get install flashplugin-installer 
+    dpkg -s cups  &>/dev/null 
+    if [ "$?" -eq 1 ]; then               
+    echo "CUPS - Server di stampa ........."
+    sudo apt-get install cups       
+   else
+    echo " CUPS risulta GIA'INSTALLATA"     
+    sleep 3
 fi 
 # INSTALLAZIONI Applicazioni# 
 # Installa in Accessori > Calcolatrice
@@ -60,7 +67,7 @@ if  [ $A = 'S' ]; then
     sudo apt-get install gnome-calculator       
    else
     echo "Calcolatrice risulta GIA'INSTALLATA"     
-    sleep 4
+    sleep 3
     fi
 fi 
 # Installa in Accessori > Xarchivier
@@ -75,7 +82,7 @@ if  [ $A = 'S' ]; then
        sudo apt-get install xarchiver   
     else
        echo "Xarchiver risulta GIA'INSTALLATO"       
-       sleep 4  
+       sleep 3
     fi
 fi 
 #Installazione gnome-screenshot
@@ -90,7 +97,7 @@ if  [ $A = 'S' ]; then
        sudo apt-get install gnome-screenshot    
     else             
        echo "gnome-screenshot risulta GIA'INSTALLATO"    
-       sleep 4  
+       sleep 3  
     fi
 fi 
 #Installazione Bleachbit
@@ -105,7 +112,7 @@ if  [ $A = 'S' ]; then
        sudo apt-get install bleachbit   
     else
        echo "Bleachbit risulta GIA'INSTALLATO"
-       sleep 4
+       sleep 3
     fi
 fi
 #Installazione XscreenSaver
@@ -120,7 +127,7 @@ if  [ $A = 'S' ]; then
        sudo apt-get install xscreensaver xscreensaver-data-extra xscreensaver-gl-extra
     else
        echo "XscreenSaver risulta GIA'INSTALLATO"
-       sleep 4
+       sleep 3
     fi
 fi
 #Installazione Deadbeef
@@ -137,7 +144,7 @@ if  [ $A = 'S' ]; then
        sudo apt-get install deadbeef    
     else
        echo "Deadbeef risulta GIA'INSTALLATO"
-       sleep 4
+       sleep 3
     fi
 fi #Installazione Gnome-MPlayer
 clear
@@ -153,7 +160,7 @@ if [ $A = 'S' ]; then
       sudo apt-get install gnome-mplayer
    else
       echo "gnome-mplayer risulta GIA'INSTALLATO"
-      sleep 4   
+      sleep 3   
    fi
 fi 
 #Installazione XFBURN
@@ -168,7 +175,7 @@ if  [ $A = 'S' ]; then
        sudo apt-get install xfburn        
     else
        echo "xfburn risulta GIA'INSTALLATO"
-       sleep 4  
+       sleep 3  
     fi
 fi 
 #Installazione Mirage
@@ -185,7 +192,7 @@ if  [ $A = 'S' ]; then
        sudo apt-get install mirage      
     else
        echo "Mirage risulta GIA'INSTALLATO"
-       sleep 4  
+       sleep 3  
     fi
 fi
 #Installazione Geary Mail
@@ -200,7 +207,7 @@ if  [ $A = 'S' ]; then
          sudo apt-get install geary     
     else
        echo "Geary Mail risulta GIA'INSTALLATO"
-       sleep 4  
+       sleep 3 
     fi
 fi
 #Installazione Pidgin 
@@ -217,7 +224,7 @@ if  [ $A = 'S' ]; then
        sudo apt-get install pidgin     
     else
        echo "Pidgin risulta GIA'INSTALLATO"
-       sleep 4  
+       sleep 3 
     fi
 fi 
 #Installazione Transmission
@@ -232,7 +239,7 @@ if  [ $A = 'S' ]; then
        sudo apt-get install transmission
     else
        echo "Transmission risulta GIA'INSTALLATO"
-       sleep 4  
+       sleep 3  
     fi
 fi 
 #Installazione Gimp
@@ -248,7 +255,7 @@ if  [ $A = 'S' ]; then              dpkg -s gimp &>/dev/null
         sudo apt-get install gimp       
      else
         echo "Gimp risulta GIA'INSTALLATO"           
-        sleep 4 
+        sleep 3 
      fi
 fi 
 #Installazione Abiword
@@ -263,7 +270,7 @@ if  [ $A = 'S' ]; then
        sudo apt-get install abiword     
     else
        echo "Abiword risulta GIA'INSTALLATO"         
-       sleep 4  
+       sleep 3 
     fi
 fi 
 #Installazione Gnumeric
@@ -278,7 +285,7 @@ if  [ $A = 'S' ]; then
        sudo apt-get install gnumeric    
     else             
        echo "Gnumeric risulta GIA'INSTALLATO"        
-       sleep 4  
+       sleep 3 
      fi
 fi
  #Installazione Evince
@@ -291,7 +298,7 @@ if  [ $A = 'S' ]; then
      if [ "$?" -eq 1 ]; then               echo  "Installazione Evince..........."           
         sudo apt-get install evince     
      else         echo "Evince risulta GIA'INSTALLATO"       
-     sleep 4    
+     sleep 3    
      fi
 fi 
 #END SCRIPT
