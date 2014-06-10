@@ -49,11 +49,12 @@ if  [ $A = 'S' ]; then
     sudo apt-get install flashplugin-installer 
     dpkg -s cups  &>/dev/null 
     if [ "$?" -eq 1 ]; then               
-    echo "CUPS - Server di stampa ........."
-    sudo apt-get install cups       
-   else
-    echo " CUPS risulta GIA'INSTALLATA"     
+       echo "CUPS - Server di stampa ........."
+       sudo apt-get install cups       
+    else
+       echo " CUPS risulta GIA'INSTALLATA"     
     sleep 3
+    fi
 fi 
 # INSTALLAZIONI Applicazioni# 
 # Installa in Accessori > Calcolatrice
