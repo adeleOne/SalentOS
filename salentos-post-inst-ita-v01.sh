@@ -1,6 +1,6 @@
 #!/bin/bash
 # Scipt post-installazione per light version SalentOS 14.04
-#"Permette di aggiungere comodamente alcuni software alla 'versione Light di SalentOS 14.04
+# Permette di aggiungere comodamente alcuni software alla 'versione Light di SalentOS 14.04
 # Bisogna avere una connessione internet attiva!' 'Verrà richiesto di inserire la password per l'utente root"
 # Realizzato da blog.salentOS.it blogsalentos@gmail.com
 # Questo script è free software: si può modificare/ridistribuire 
