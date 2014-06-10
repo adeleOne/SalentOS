@@ -53,7 +53,7 @@ if  [ $A = 'S' ]; then
        sudo apt-get install cups       
     else
        echo " CUPS risulta GIA'INSTALLATA"     
-    sleep 3
+       sleep 3
     fi
 fi 
 # INSTALLAZIONI Applicazioni# 
