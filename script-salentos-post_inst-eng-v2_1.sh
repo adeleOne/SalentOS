@@ -25,7 +25,7 @@ function scelta()
 {
 A='a'
 until [[ $A = "Y" || $A = "N"  || $A = "n" || $A = "y" ]]; do
-     read -p "$B - Confirm (Y)/(N) ?"A
+     read -p "$B - Confirm (Y)/(N) ?" A 
      done
 }
 clear
