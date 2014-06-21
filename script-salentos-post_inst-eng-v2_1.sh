@@ -43,14 +43,14 @@ TOT=0
 REP="Installed softwares:"
 #
 # update/dist-upgrade 
-B='SYSTEM UPDATE'
+B="SYSTEM UPDATE"
 scelta
 if  [[ $A = 'Y' || $A = 'y' ]]; then          
     echo "UPDATING SYSTEM ........."        
     sudo apt-get update         
     echo "UPGRADING SYSTEM........."         
     sudo apt-get dist-upgrade    
-    echo Adobe Flash Player Update ........."    
+    echo "Adobe Flash Player Update ........."    
     sudo apt-get install flashplugin-installer 
     dpkg -s cups  &>/dev/null 
     if [ "$?" -eq 1 ]; then               
@@ -66,7 +66,7 @@ fi
 # INSTALLAZIONI Applicazioni# 
 # Installa in Accessori > Calcolatrice
 testa
-B='INSTALL CALCULATOR'
+B="INSTALL CALCULATOR"
 scelta
 if  [[ $A = 'Y' || $A = 'y' ]]; then   
     dpkg -s gnome-calculator &>/dev/null         
