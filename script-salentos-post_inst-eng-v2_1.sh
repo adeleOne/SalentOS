@@ -83,7 +83,7 @@ fi
 # Installa in Accessori > Xarchivier
 clear
 testa
-B="INSTALL of XARCHIVER(Manager Compressed Archive)"
+B="INSTALL of XARCHIVER (Manager Compressed Archive)"
 scelta
 if  [[ $A = 'Y' || $A = 'y' ]]; then   
     dpkg -s xarchiver &>/dev/null         
@@ -100,7 +100,7 @@ fi
 #Installazione gnome-screenshot
 clear
 testa
-B='INSTALL GNOME-SCREENSHOT'
+B="INSTALL GNOME-SCREENSHOT (Save the screenshots)"
 scelta
 if  [[ $A = 'Y' || $A = 'y' ]]; then   
     dpkg -s gnome-screenshot &>/dev/null        
