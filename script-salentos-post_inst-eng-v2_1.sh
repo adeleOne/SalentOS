@@ -276,7 +276,7 @@ fi
 #Installazione Gnumeric
 clear
 testa
-B="INSTALL of GNUMERIC - Spreadsheet)"
+B="INSTALL of GNUMERIC - Spreadsheet"
 scelta
 if  [[ $A = 'Y' || $A = 'y' ]]; then  
      dpkg -s gnumeric &>/dev/null         
