@@ -66,7 +66,7 @@ fi
 # INSTALLAZIONI Applicazioni# 
 # Installa in Accessori > Calcolatrice
 testa
-B="INSTALL CALCULATOR()"
+B="INSTALL CALCULATOR"
 scelta
 if  [[ $A = 'Y' || $A = 'y' ]]; then   
     dpkg -s gnome-calculator &>/dev/null         
@@ -83,7 +83,7 @@ fi
 # Installa in Accessori > Xarchivier
 clear
 testa
-B='INSTALL of XARCHIVER'
+B="INSTALL of XARCHIVER(Manager Compressed Archive)"
 scelta
 if  [[ $A = 'Y' || $A = 'y' ]]; then   
     dpkg -s xarchiver &>/dev/null         
