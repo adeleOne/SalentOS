@@ -315,7 +315,7 @@ if [ $TOT -eq 0 ]; then
    echo 'NO SOFTWARE INSTALLED'
    echo ''
  else
-  echo  "INSTALLED NR."$TOT" software"
+  echo  "INSTALLED NR." $TOT " software"
   echo -e $REP
   echo ''
 fi
