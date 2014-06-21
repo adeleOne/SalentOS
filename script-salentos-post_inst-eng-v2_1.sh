@@ -68,7 +68,7 @@ fi
 testa
 B='INSTALL CALCULATOR'
 scelta
-if  [[ $A = 'S' || $A = 's' ]]; then   
+if  [[ $A = 'Y' || $A = 'y' ]]; then   
     dpkg -s gnome-calculator &>/dev/null         
     if [ "$?" -eq 1 ]; then               
     echo "instalation of Calculator ..........."
@@ -85,7 +85,7 @@ clear
 testa
 B="INSTALL of XARCHIVER (Manager Compressed Archives)"
 scelta
-if  [[ $A = 'S' || $A = 's' ]]; then   
+if  [[ $A = 'Y' || $A = 'y' ]]; then   
     dpkg -s xarchiver &>/dev/null         
     if [ "$?" -eq 1 ]; then
        echo "Installation of  Xarchiver..........."
@@ -102,7 +102,7 @@ clear
 testa
 B="INSTALL  GNOME-SCREENSHOT (Save the screenshots)"
 scelta
-if  [[ $A = 'S' || $A = 's' ]]; then   
+if  [[ $A = 'Y' || $A = 'y' ]]; then   
     dpkg -s gnome-screenshot &>/dev/null        
     if [ "$?" -eq 1 ]; then
        echo "Installation of gnome-screenshot..........."   
@@ -119,7 +119,7 @@ clear
 testa
 B="INSTALL of BLEACHBIT (Cleaning System)"
 scelta
-if  [[ $A = 'S' || $A = 's' ]]; then   
+if  [[ $A = 'Y' || $A = 'y' ]]; then   
     dpkg -s bleachbit &>/dev/null         
     if [ "$?" -eq 1 ]; then           
        echo "Installation of Bleachbit ..........."             
@@ -136,7 +136,7 @@ clear
 testa
 B="INSTALL of XscreenSaver"
 scelta
-if  [[ $A = 'S' || $A = 's' ]]; then   
+if  [[ $A = 'Y' || $A = 'y' ]]; then   
     dpkg -s xscreensaver &>/dev/null         
     if [ "$?" -eq 1 ]; then           
        echo "Installation of XscreenSaver..........."             
@@ -153,7 +153,7 @@ clear
 testa
 B="INSTALL of GNOME-MPLAYER (Player Audio/Video)"
 scelta
-if  [[ $A = 'S' || $A = 's' ]]; then   
+if  [[ $A = 'Y' || $A = 'y' ]]; then   
    dpkg -s gnome-mplayer &>/dev/null 
    if [ "$?" -eq 1 ]; then 
       echo "Installation of gnome-mplayer ..........."         
@@ -172,7 +172,7 @@ clear
 testa
 B="INSTALL of XFBURN (Burning)"
 scelta
-if  [[ $A = 'S' || $A = 's' ]]; then   
+if  [[ $A = 'Y' || $A = 'y' ]]; then   
     dpkg -s xfburn &>/dev/null        
     if [ "$?" -eq 1 ]; then               
        echo "Installation of Xfburn ..........."              
@@ -189,7 +189,7 @@ clear
 testa
 B="INSTALL of MIRAGE (Immage Manager)"
 scelta
-if  [[ $A = 'S' || $A = 's' ]]; then   
+if  [[ $A = 'Y' || $A = 'y' ]]; then   
     dpkg -s mirage &>/dev/null         
     if [ "$?" -eq 1 ]; then               
        echo "Installation of  Mirage ..........."       
@@ -208,7 +208,7 @@ clear
 testa
 B="INSTALL of GEARY (mail client)"
 scelta
-if  [[ $A = 'S' || $A = 's' ]]; then   
+if  [[ $A = 'Y' || $A = 'y' ]]; then   
     dpkg -s geary &>/dev/null         
      if [ "$?" -eq 1 ]; then               
          echo  "Installation of  Geary Mail ..........."
@@ -225,7 +225,7 @@ clear
 testa
 B="INSTALL of PIDGIN (Instant Messaging)"
 scelta
-if  [[ $A = 'S' || $A = 's' ]]; then   
+if  [[ $A = 'Y' || $A = 'y' ]]; then   
     dpkg -s pidgin &>/dev/null         
     if [ "$?" -eq 1 ]; then               
        echo  "Installation of Pidgin ..........."      
@@ -244,7 +244,7 @@ clear
 testa
 B="INSTALL of TRANSMISSION (Client Bit torrent)"
 scelta
-if  [[ $A = 'S' || $A = 's' ]]; then   
+if  [[ $A = 'Y' || $A = 'y' ]]; then   
     dpkg -s transmission &>/dev/null         
     if [ "$?" -eq 1 ]; then               
        echo  "Installation of Trasmission ..........."      
@@ -261,7 +261,7 @@ clear
 testa
 B="INSTALL of ABIWORD (word processor)"
 scelta
-if  [[ $A = 'S' || $A = 's' ]]; then   
+if  [[ $A = 'Y' || $A = 'y' ]]; then   
     dpkg -s abiword &>/dev/null        
     if [ "$?" -eq 1 ]; then  
        echo  "Installation of Abiword..........."     
@@ -278,7 +278,7 @@ clear
 testa
 B="INSTALL of GNUMERIC (Spreadsheet)"
 scelta
-if  [[ $A = 'S' || $A = 's' ]]; then  
+if  [[ $A = 'Y' || $A = 'y' ]]; then  
      dpkg -s gnumeric &>/dev/null         
     if [ "$?" -eq 1 ]; then               
        echo  "Installation of Gnumeric..........."             
@@ -293,9 +293,9 @@ fi
  #Installazione Evince
 clear
 testa
-B="INSTALL of EVINCE (lettore pdf)"
+B="INSTALL of EVINCE (pdf reader)"
 scelta
-if  [[ $A = 'S' || $A = 's' ]]; then   
+if  [[ $A = 'Y' || $A = 'y' ]]; then   
     dpkg -s evince &>/dev/null         
      if [ "$?" -eq 1 ]; then
         echo  "Installation of Evince..........."           
