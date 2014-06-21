@@ -206,7 +206,7 @@ fi
 #Installazione Geary Mail
 clear
 testa
-B='INSTALL of GEARY'"
+B='INSTALL of GEARY'
 scelta
 if  [[ $A = 'Y' || $A = 'y' ]]; then   
     dpkg -s geary &>/dev/null         
