@@ -293,7 +293,7 @@ fi
  #Installazione Evince
 clear
 testa
-B="INSTALL of EVINCE (pdf reader)"
+B="INSTALL of EVINCE -pdf reader"
 scelta
 if  [[ $A = 'Y' || $A = 'y' ]]; then   
     dpkg -s evince &>/dev/null         
