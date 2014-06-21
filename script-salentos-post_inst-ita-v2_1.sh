@@ -189,7 +189,7 @@ testa
 B="Installazione MIRAGE (VIsualizzatore di Immagini)"
 scelta
 if  [[ $A = 'S' || $A = 's' ]]; then   
-    dpkg -s xfburnXfburn &>/dev/null         
+    dpkg -s mirage &>/dev/null         
     if [ "$?" -eq 1 ]; then               
        echo "Installazione Mirage ..........."       
        sudo add-apt-repository ppa:vexo/ppa          
@@ -246,7 +246,7 @@ scelta
 if  [[ $A = 'S' || $A = 's' ]]; then   
     dpkg -s transmission &>/dev/null         
     if [ "$?" -eq 1 ]; then               
-       echo  "Installazione Pidgin ..........."      
+       echo  "Installazione Transmission ..........."      
        sudo apt-get install transmission
        REP=$REP'\n'"Transmission"
        TOT=$(($TOT+1))
