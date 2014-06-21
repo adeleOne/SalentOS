@@ -45,7 +45,7 @@ REP="Installed softwares:"
 # update/dist-upgrade 
 B='SYSTEM UPDATE'
 scelta
-if  [[ $A = 'S' || $A = 's' ]]; then          
+if  [[ $A = 'Y' || $A = 'y' ]]; then          
     echo "UPDATING SYSTEM ........."        
     sudo apt-get update         
     echo "UPGRADING SYSTEM........."         
@@ -66,17 +66,17 @@ fi
 # INSTALLAZIONI Applicazioni# 
 # Installa in Accessori > Calcolatrice
 testa
-B='INSTALL GCALCULATOR'
+B='INSTALL CALCULATOR'
 scelta
 if  [[ $A = 'S' || $A = 's' ]]; then   
     dpkg -s gnome-calculator &>/dev/null         
     if [ "$?" -eq 1 ]; then               
-    echo "instalation of GCalculator ..........."
+    echo "instalation of Calculator ..........."
     sudo apt-get install gnome-calculator 
     REP=$REP'\n'"Calcolatrice"
     TOT=$(($TOT+1))
    else
-    echo "Gcalculator IT IS ALREADY INSTALLED"     
+    echo "Calculator IT IS ALREADY INSTALLED"     
     sleep 1.5
     fi
 fi 
