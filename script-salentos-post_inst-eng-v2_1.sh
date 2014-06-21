@@ -83,7 +83,7 @@ fi
 # Installa in Accessori > Xarchivier
 clear
 testa
-B="INSTALL of XARCHIVER(Manager Compressed Archives)"
+B='INSTALL of XARCHIVER'
 scelta
 if  [[ $A = 'Y' || $A = 'y' ]]; then   
     dpkg -s xarchiver &>/dev/null         
