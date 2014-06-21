@@ -66,7 +66,7 @@ fi
 # INSTALLAZIONI Applicazioni# 
 # Installa in Accessori > Calcolatrice
 testa
-B="INSTALL CALCULATOR"
+B="INSTALL CALCULATOR()"
 scelta
 if  [[ $A = 'Y' || $A = 'y' ]]; then   
     dpkg -s gnome-calculator &>/dev/null         
