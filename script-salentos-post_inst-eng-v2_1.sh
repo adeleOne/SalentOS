@@ -259,7 +259,7 @@ fi
 #Installazione Abiword
 clear
 testa
-B="INSTALL of ABIWORD (wordprocessor)
+B="INSTALL of ABIWORD (wordprocessor)"
 scelta
 if  [[ $A = 'Y' || $A = 'y' ]]; then   
     dpkg -s abiword &>/dev/null        
