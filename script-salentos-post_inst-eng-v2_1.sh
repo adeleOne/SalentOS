@@ -30,12 +30,12 @@ until [[ $A = "Y" || $A = "N"  || $A = "n" || $A = "y" ]]; do
 }
 clear
 testa
-echo '#--------------------------------------------------------------------#'
-echo 'This script allows you to install softwares that are not presents in'
-echo 'SalentOS 14.04 light version' 
-echo 'You need an active internet connection'
-echo 'You will be prompted to enter the password for the root user'
-echo '#-------------------------------------------------------------------#'
+echo '#----------------------------------------------------------------------#'
+echo '# This script allows you to install softwares that are not presents in #'
+echo '# SalentOS 14.04 light version                                         #'  
+echo '# You need an active internet connection                               #'
+echo '# You will be prompted to enter the password for the root user         #'
+echo '#----------------------------------------------------------------------#'
 echo ''
 echo ''
 #Main
@@ -315,7 +315,7 @@ if [ $TOT -eq 0 ]; then
    echo 'NO SOFTWARE INSTALLED'
    echo ''
  else
-  echo  "INSTALLED "NR."$TOT" software"
+  echo  "INSTALLED NR."$TOT" software"
   echo -e $REP
   echo ''
 fi
