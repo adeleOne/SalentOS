@@ -242,7 +242,7 @@ fi
 #Installazione Transmission
 clear
 testa
-B="INSTALL of TRANSMISSION  (BitTorrent client)"
+B="INSTALL of TRANSMISSION (BitTorrent client)"
 scelta
 if  [[ $A = 'Y' || $A = 'y' ]]; then   
     dpkg -s transmission &>/dev/null         
