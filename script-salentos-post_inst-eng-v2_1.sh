@@ -117,7 +117,7 @@ fi
 #Installazione Bleachbit
 clear
 testa
-B='INSTALL of BLEACHBIT'
+B="INSTALL of BLEACHBIT (Cleaning System)"
 scelta
 if  [[ $A = 'Y' || $A = 'y' ]]; then   
     dpkg -s bleachbit &>/dev/null         
@@ -151,7 +151,7 @@ fi
 #Installazione Gnome-MPlayer
 clear
 testa
-B='INSTALL of GNOME-MPLAYER'
+B="INSTALL of GNOME-MPLAYER (player Audio / Video)"
 scelta
 if  [[ $A = 'Y' || $A = 'y' ]]; then   
    dpkg -s gnome-mplayer &>/dev/null 
@@ -170,7 +170,7 @@ fi
 #Installazione XFBURN
 clear
 testa
-B='INSTALL of XFBURN'
+B="INSTALL of XFBURN (Burning)"
 scelta
 if  [[ $A = 'Y' || $A = 'y' ]]; then   
     dpkg -s xfburn &>/dev/null        
@@ -187,7 +187,7 @@ fi
 #Installazione Mirage
 clear
 testa
-B='INSTALL of MIRAGE'
+B="INSTALL of MIRAGE (Image viewer)"
 scelta
 if  [[ $A = 'Y' || $A = 'y' ]]; then   
     dpkg -s mirage &>/dev/null         
@@ -206,7 +206,7 @@ fi
 #Installazione Geary Mail
 clear
 testa
-B='INSTALL of GEARY'
+B="NSTALL of GEARY (mail client)"
 scelta
 if  [[ $A = 'Y' || $A = 'y' ]]; then   
     dpkg -s geary &>/dev/null         
@@ -223,7 +223,7 @@ fi
 #Installazione Pidgin 
 clear
 testa
-B='INSTALL of PIDGIN'
+B="INSTALL of PIDGIN (Instant Messaging)"
 scelta
 if  [[ $A = 'Y' || $A = 'y' ]]; then   
     dpkg -s pidgin &>/dev/null         
@@ -242,7 +242,7 @@ fi
 #Installazione Transmission
 clear
 testa
-B='INSTALL of TRANSMISSION '
+B="INSTALL of TRANSMISSION  (Bit Torrent client)"
 scelta
 if  [[ $A = 'Y' || $A = 'y' ]]; then   
     dpkg -s transmission &>/dev/null         
@@ -259,7 +259,7 @@ fi
 #Installazione Abiword
 clear
 testa
-B='INSTALL of ABIWORD'
+B="INSTALL of ABIWORD (wordprocessor)
 scelta
 if  [[ $A = 'Y' || $A = 'y' ]]; then   
     dpkg -s abiword &>/dev/null        
@@ -276,7 +276,7 @@ fi
 #Installazione Gnumeric
 clear
 testa
-B="INSTALL of GNUMERIC - Spreadsheet"
+B="INSTALL of GNUMERIC (Spreadsheet)"
 scelta
 if  [[ $A = 'Y' || $A = 'y' ]]; then  
      dpkg -s gnumeric &>/dev/null         
@@ -293,7 +293,7 @@ fi
  #Installazione Evince
 clear
 testa
-B="INSTALL of EVINCE -pdf reader"
+B="INSTALL of EVINCE (pdf reader)"
 scelta
 if  [[ $A = 'Y' || $A = 'y' ]]; then   
     dpkg -s evince &>/dev/null         
