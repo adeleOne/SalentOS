@@ -100,7 +100,7 @@ fi
 #Installazione gnome-screenshot
 clear
 testa
-B='INSTALL GNOME-SCREENSHOT"
+B='INSTALL GNOME-SCREENSHOT'
 scelta
 if  [[ $A = 'Y' || $A = 'y' ]]; then   
     dpkg -s gnome-screenshot &>/dev/null        
@@ -117,7 +117,7 @@ fi
 #Installazione Bleachbit
 clear
 testa
-B="INSTALL of BLEACHBIT (Cleaning System)"
+B='INSTALL of BLEACHBIT'
 scelta
 if  [[ $A = 'Y' || $A = 'y' ]]; then   
     dpkg -s bleachbit &>/dev/null         
@@ -134,7 +134,7 @@ fi
 #Installazione XscreenSaver
 clear
 testa
-B="INSTALL of XscreenSaver"
+B='INSTALL of XscreenSaver'
 scelta
 if  [[ $A = 'Y' || $A = 'y' ]]; then   
     dpkg -s xscreensaver &>/dev/null         
@@ -151,7 +151,7 @@ fi
 #Installazione Gnome-MPlayer
 clear
 testa
-B="INSTALL of GNOME-MPLAYER (Player Audio/Video)"
+B='INSTALL of GNOME-MPLAYER'
 scelta
 if  [[ $A = 'Y' || $A = 'y' ]]; then   
    dpkg -s gnome-mplayer &>/dev/null 
@@ -170,7 +170,7 @@ fi
 #Installazione XFBURN
 clear
 testa
-B="INSTALL of XFBURN (Burning)"
+B='INSTALL of XFBURN'
 scelta
 if  [[ $A = 'Y' || $A = 'y' ]]; then   
     dpkg -s xfburn &>/dev/null        
@@ -187,7 +187,7 @@ fi
 #Installazione Mirage
 clear
 testa
-B="INSTALL of MIRAGE (Immage Manager)"
+B='INSTALL of MIRAGE'
 scelta
 if  [[ $A = 'Y' || $A = 'y' ]]; then   
     dpkg -s mirage &>/dev/null         
@@ -206,7 +206,7 @@ fi
 #Installazione Geary Mail
 clear
 testa
-B="INSTALL of GEARY (mail client)"
+B='INSTALL of GEARY'"
 scelta
 if  [[ $A = 'Y' || $A = 'y' ]]; then   
     dpkg -s geary &>/dev/null         
@@ -223,7 +223,7 @@ fi
 #Installazione Pidgin 
 clear
 testa
-B="INSTALL of PIDGIN (Instant Messaging)"
+B='INSTALL of PIDGIN'
 scelta
 if  [[ $A = 'Y' || $A = 'y' ]]; then   
     dpkg -s pidgin &>/dev/null         
@@ -242,7 +242,7 @@ fi
 #Installazione Transmission
 clear
 testa
-B="INSTALL of TRANSMISSION (Client Bit torrent)"
+B='INSTALL of TRANSMISSION '
 scelta
 if  [[ $A = 'Y' || $A = 'y' ]]; then   
     dpkg -s transmission &>/dev/null         
@@ -259,7 +259,7 @@ fi
 #Installazione Abiword
 clear
 testa
-B="INSTALL of ABIWORD (word processor)"
+B='INSTALL of ABIWORD'
 scelta
 if  [[ $A = 'Y' || $A = 'y' ]]; then   
     dpkg -s abiword &>/dev/null        
@@ -276,7 +276,7 @@ fi
 #Installazione Gnumeric
 clear
 testa
-B="INSTALL of GNUMERIC (Spreadsheet)"
+B="INSTALL of GNUMERIC - Spreadsheet)"
 scelta
 if  [[ $A = 'Y' || $A = 'y' ]]; then  
      dpkg -s gnumeric &>/dev/null         
